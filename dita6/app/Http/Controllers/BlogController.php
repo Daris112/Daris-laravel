@@ -11,14 +11,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('index',[
-            'name' => 'Daris',
-            'script'=>'<script>alert("Hello World")</script>',
-            'html'=>'<h1>Hello World</h1>',
-            'array' => ['Daris','Dimas','Dina'],
-            'object' => (object)['name' => 'Daris','age' => 20],
-            'subject'=>[]
-        ]);
+        return view('blog.index');
     }
 
     /**
@@ -26,7 +19,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return view('blog.create');
     }
 
     /**
@@ -34,7 +27,7 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "Blog created successfully!";
     }
 
     /**
